@@ -26,15 +26,26 @@ apt-get update
 apt-get install -y homelab-mcp
 
 printf '\nHomelab MCP ist installiert.\n'
-printf 'Admin-Oberfläche lokal: http://127.0.0.1:3001/admin/\n'
+printf 'Admin-Dienst lokal: http://127.0.0.1:3001/admin/\n'
+printf 'MCP-Dienst lokal:   http://127.0.0.1:3000/mcp\n'
 server_ip=$(hostname -I 2>/dev/null | awk '{ for (i = 1; i <= NF; i++) if ($i ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/) { print $i; exit } }')
 printf '\nErsteinrichtung im privaten Netzwerk:\n'
 if [[ -n "$server_ip" ]]; then
-  printf '  Im Browser öffnen: http://%s:3101/admin/\n' "$server_ip"
+  printf '  Admin-Oberfläche: http://%s:3101/admin/\n' "$server_ip"
 else
-  printf '  Im Browser öffnen: http://<server-address>:3101/admin/\n'
+  printf '  Admin-Oberfläche: http://<server-ip>:3101/admin/\n'
 fi
-printf '  Die Admin-Oberfläche ist dort zunächst ohne eigenes Passwort erreichbar.\n'
-printf '  Der auffällige Warnhinweis muss bewusst bestätigt werden.\n'
-printf '  Für externen Zugriff einen authentifizierten Reverse Proxy wie Cloudflare Access verwenden.\n'
-printf '\nDer eigentliche Admin-Dienst auf Port 3001 bleibt nur lokal erreichbar.\n'
+printf '\nDanach in der Oberfläche:\n'
+printf '  1. Einrichtung: Proxmox und weitere Linux-/SSH-Systeme oder MikroTik verbinden.\n'
+printf '  2. Tools: Werkzeuge pro System prüfen und Freigaben direkt in der Tabelle setzen.\n'
+printf '  3. Sicherheit: privaten Admin-Zugriff beibehalten oder auf Cloudflare/Reverse Proxy beschränken.\n'
+printf '  4. MCP-Shell nur bei Bedarf unter Sicherheit aktivieren.\n'
+printf '  5. Optional Wiki und zusätzliche Tools einrichten oder importieren.\n'
+printf '\nHinweise:\n'
+printf '  - Port 3001 und der MCP auf Port 3000 bleiben lokal gebunden.\n'
+printf '  - Port 3101 dient der Ersteinrichtung im privaten Netzwerk.\n'
+printf '  - Port 3101 niemals direkt ins Internet veröffentlichen.\n'
+printf '  - Für externen Admin-Zugriff einen authentifizierten Reverse Proxy verwenden.\n'
+printf '  - Zugangsdaten sind nur nötig, wenn eine Integration ausdrücklich ein Token/Secret benötigt.\n'
+printf '  - Home Assistant wird als separater MCP betrieben und gehört nicht zum normalen Homelab-Setup.\n'
+printf '  - Updates können später über „Jetzt aktualisieren“ oder per APT eingespielt werden.\n'

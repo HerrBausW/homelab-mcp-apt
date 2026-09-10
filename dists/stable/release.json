@@ -1,6 +1,6 @@
 {
-  "version": "0.5.25",
-  "tag": "v0.5.25",
-  "notes": "- Behebt den APT-Selbstupdate-Dienst unter systemd-Härtung: APT verwendet im fest begrenzten Root-Updater keinen zusätzlichen `_apt`-UID-Wechsel mehr, der durch die Unit-Sandbox blockiert wurde.\n- Die Oberfläche überwacht den tatsächlichen Update-Dienst und meldet einen fehlgeschlagenen APT-Lauf, statt nach dem Start pauschal neu zu laden.",
-  "publishedAt": "2026-09-10T17:40:45Z"
+  "version": "0.5.28",
+  "tag": "v0.5.28",
+  "notes": "- Entfernt einen verbliebenen doppelten README-Block aus dem APT-Repository-Generator, der nach dem korrekten Heredoc weiterhin als Shell-Befehle ausgeführt wurde.\n- Ergänzt einen Regressionstest, der genau einen README-Generatorblock und genau einen Heredoc-Abschluss erzwingt.",
+  "publishedAt": "2026-09-10T20:07:49Z"
 }
