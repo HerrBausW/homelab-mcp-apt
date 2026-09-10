@@ -1,6 +1,6 @@
 {
-  "version": "0.5.21",
-  "tag": "v0.5.21",
-  "notes": "- Systeme, Tools und Freigaben stehen jetzt in einer einzigen Tabelle statt in zwei getrennten Listen.\n- Jede Tool-Zeile zeigt System, Herkunft, Risiko und effektive Freigabe.\n- Zusätzliche Tools lassen sich direkt bearbeiten; bei Vorlagen kann direkt ein weiteres Tool für dasselbe System angelegt werden.",
-  "publishedAt": "2026-09-10T13:23:02Z"
+  "version": "0.5.22",
+  "tag": "v0.5.22",
+  "notes": "- Tools werden nach System gruppiert; „+ Tool“ erscheint nur noch einmal pro System.\n- Vorlagen-Tools mit deklarativem SSH-Befehl können direkt bearbeitet werden.\n- Sicherheit enthält jetzt eine echte Admin-Zugriffskonfiguration für privates Netz, Cloudflare Access/Tunnel oder andere Reverse Proxies.\n- Bei Reverse-Proxy-Modus wird Port 3101 serverseitig auf die angegebenen Proxy-IP-Adressen beschränkt; der Warnbanner richtet sich nach diesem Status.",
+  "publishedAt": "2026-09-10T13:52:39Z"
 }
