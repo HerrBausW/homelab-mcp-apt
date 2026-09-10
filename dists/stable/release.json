@@ -1,6 +1,6 @@
 {
-  "version": "0.5.18",
-  "tag": "v0.5.18",
-  "notes": "- SSH-Ziele sind jetzt Systeme, die sowohl von Vorlagen als auch von zusätzlichen Tools gemeinsam genutzt werden können.\n- Proxmox und andere vorkonfigurierte Ziele erscheinen im Tool-Assistenten und können um eigene Tools erweitert werden.\n- Der Bereich „Eigene Tools“ heißt vereinfacht „Tools“.\n- Beim ersten eigenen Tool wird die Tool-Funktion automatisch aktiviert; Freigaben bleiben weiterhin standardmäßig gesperrt.",
-  "publishedAt": "2026-09-10T11:57:28Z"
+  "version": "0.5.19",
+  "tag": "v0.5.19",
+  "notes": "- Tools und Freigaben wurden in einer gemeinsamen Ansicht zusammengeführt.\n- Systeme zeigen ihre Vorlagen-Tools und können über „+ Tool“ direkt erweitert werden.\n- Portable Exporte lassen sich nach System auswählen.\n- Zusätzlich gibt es ein verschlüsseltes Vollbackup mit privaten SSH-/Wiki-Schlüsseln und geschützten Werten.\n- Audit-Protokoll ist jetzt Teil von Sicherheit; die technische Konfigurationsansicht wurde aus der Navigation entfernt.\n- Interne Home-Assistant- und System-Plugins werden in den normalen Freigaben ausgeblendet.",
+  "publishedAt": "2026-09-10T12:31:03Z"
 }
