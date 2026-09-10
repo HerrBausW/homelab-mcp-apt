@@ -1,24 +1,24 @@
 Architectures: all
 Codename: stable
 Components: main
-Date: Thu, 10 Sep 2026 06:56:32 +0000
+Date: Thu, 10 Sep 2026 07:58:21 +0000
 Description: Homelab MCP Debian packages
 Label: Homelab MCP
 Origin: Homelab MCP
 Suite: stable
 MD5Sum:
- f45dac2191fc27913d69543e5171d4c9              185 Release
- 9c7d781dee46186aed419d2573372566             2182 main/binary-all/Packages
- eebc1bb90a67d0b5df0fbd4d4dce6faf              757 main/binary-all/Packages.gz
+ 307cbbfccfeab301814698dac1c83249              185 Release
+ 6f4ad1b5b115ebfb606eba1d19483d7f             2922 main/binary-all/Packages
+ 481f452faeb09d0e5eca45e9bb0487b3              863 main/binary-all/Packages.gz
 SHA1:
- e81d5a025e8f442123055fc43168393a4da9ebcb              185 Release
- 23b49bc52e848cd0baf0354b8303b30091c24fe4             2182 main/binary-all/Packages
- 23b725f14a7f89abeb80f0e9725195c80817e995              757 main/binary-all/Packages.gz
+ de9aa36021d5ce6b52ef8a719e5c6ce4ab9eb5b9              185 Release
+ 71fa450d623941498841dcfa69c1a0bed08c962a             2922 main/binary-all/Packages
+ 516d55b5dbdab75aa8b49739db527acd48632d7e              863 main/binary-all/Packages.gz
 SHA256:
- 67d32a8270401e155981aad3301011be8d45de517f57a78d856e21322cba0157              185 Release
- 6c1ab82744b5a5b2245997bcacd4d80c9fde13254452a7460ec145f6ff060bc1             2182 main/binary-all/Packages
- 7b7e60ad05c0ec13ce7089f2e0d5835e784548d30f00f687b1af88aaf73309f8              757 main/binary-all/Packages.gz
+ dd5805b1a9fde9e1754e474b4defde26bd8fb65db92660994c8ef85789e199df              185 Release
+ b4795fde935be516f71c9c9980faa9ccb390db0d2b067e3b248599293224fa27             2922 main/binary-all/Packages
+ 8cb988ae034201f2b3ba295ca2f8d7957ad2f752edbcc9dd0668f6b05eb99393              863 main/binary-all/Packages.gz
 SHA512:
- 1b514d9e94a155e5413436d9b2b2945819faf99728bc310f0cddc3a3241bdd78be1fbd9251beda317724d47402407783a192f0822ec91d8e22d2d5e50056791a              185 Release
- 651c3f85e0c8d295c1eed685d5c5b7877ed5df1f52f6e5ad73d44af5c6110afc4e9fe21ab87da109bbf7a56713033d06ee97ac3bd18a00e6b6de04fb9d4fb3f3             2182 main/binary-all/Packages
- f3f45184aab585566ae20f448b39aae4b16126b430dccf9b3e149c65a3a878b7eae81c6bea6c79676265ef8ac03ddca6fb056c2a4eb0b5499fe7402ef4a21293              757 main/binary-all/Packages.gz
+ 03e580fc254aee69e9054d2eb3c71de202a54f2f3598aaa4f8549a0da697cc1667eb2459d8fd885e7137e0ceb825d62b847f71fe861be534cd73628560f60f3e              185 Release
+ 066c82446d125138586b4ae29da9a268d088edc98074bb8ff8cd0b67c70bd01bf30458064c28d7bee7a037071d17946e1dcf5db200116785b0208144645965b8             2922 main/binary-all/Packages
+ 1533428accf70ec4703a66ee089696e599d1a72db30947b40e336012d7617b0022e36049fb032bbf8cfff158c8ba11f0da69ea714e8b965fa67fd94a8de547fe              863 main/binary-all/Packages.gz
