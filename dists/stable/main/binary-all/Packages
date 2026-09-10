@@ -305,6 +305,23 @@ Description: Security-first MCP server for self-hosted infrastructure
  Home Assistant and Proxmox integrations.
 
 Package: homelab-mcp
+Version: 0.5.30
+Architecture: all
+Maintainer: Homelab MCP <homelab-mcp@localhost.invalid>
+Depends: nodejs (>= 24), git, openssh-client, openssh-server, ca-certificates, systemd, passwd, iputils-ping
+Filename: pool/main/h/homelab-mcp/homelab-mcp_0.5.30_all.deb
+Size: 1671970
+MD5sum: d0af30bd592bcc7aed1eea57d32ccb25
+SHA1: 7bd6f2e212543671faf140b4ee5426caf2ef3fbd
+SHA256: 630423c083f3213fe12316ab018bf116e10f59f56424325ae63edcb4ddd43afc
+Section: net
+Priority: optional
+Description: Security-first MCP server for self-hosted infrastructure
+ Plugin-based Model Context Protocol server with a local administration UI,
+ default-deny tool policy, persistent audit, custom tools and optional wiki,
+ Home Assistant and Proxmox integrations.
+
+Package: homelab-mcp
 Version: 0.5.5
 Architecture: all
 Maintainer: Homelab MCP <homelab-mcp@localhost.invalid>
