@@ -26,7 +26,7 @@ Der privilegierte Admin-Dienst auf Port `3001` und der MCP-Dienst auf Port `3000
 4. Die **MCP-Shell** nur bei Bedarf aktivieren; sie läuft ausschließlich als unprivilegierter Benutzer `homelab-mcp`.
 5. Optional Wiki und zusätzliche Tools einrichten oder importieren.
 
-Der Bereich **Zugangsdaten** ist nur für Integrationen erforderlich, die ausdrücklich Tokens oder andere Geheimnisse benötigen. Für die normale Proxmox-SSH-Einrichtung ist dort nichts einzutragen. Home Assistant wird bewusst als eigener MCP behandelt und gehört nicht zum normalen Homelab-Ersteinrichtungsablauf.
+Der Bereich **Zugangsdaten** ist nur für Integrationen erforderlich, die ausdrücklich Tokens oder andere Geheimnisse benötigen. Für die normale Proxmox-SSH-Einrichtung ist dort nichts einzutragen.
 
 ## Updates
 

@@ -1,6 +1,6 @@
 {
-  "version": "0.5.28",
-  "tag": "v0.5.28",
-  "notes": "- Entfernt einen verbliebenen doppelten README-Block aus dem APT-Repository-Generator, der nach dem korrekten Heredoc weiterhin als Shell-Befehle ausgeführt wurde.\n- Ergänzt einen Regressionstest, der genau einen README-Generatorblock und genau einen Heredoc-Abschluss erzwingt.",
-  "publishedAt": "2026-09-10T20:07:49Z"
+  "version": "0.5.29",
+  "tag": "v0.5.29",
+  "notes": "- Entfernt Home-Assistant-Hinweise aus dem öffentlichen Installer, dem APT-README und dem normalen Ersteinrichtungsablauf. Home Assistant bleibt außerhalb der Homelab-MCP-Ersteinrichtung.",
+  "publishedAt": "2026-09-10T20:15:42Z"
 }
