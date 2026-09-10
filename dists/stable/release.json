@@ -1,0 +1,6 @@
+{
+  "version": "0.5.17",
+  "tag": "v0.5.17",
+  "notes": "- Eigene Tools können als portables JSON-Paket exportiert und wieder importiert werden.\n- Übersicht und Versionsinformationen wurden zusammengeführt; der separate Reiter „Versionen“ entfällt.\n- APT-Installationen prüfen im Portal die veröffentlichte Version und zeigen verfügbare Updates an.\n- Die Übersicht zeigt die Versionshinweise der aktuell veröffentlichten Version.",
+  "publishedAt": "2026-09-10T09:24:46Z"
+}
