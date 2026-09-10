@@ -27,3 +27,9 @@ apt-get install -y homelab-mcp
 
 printf '\nHomelab MCP ist installiert.\n'
 printf 'Admin-Oberfläche lokal: http://127.0.0.1:3001/admin/\n'
+printf '\nErsteinrichtung ohne Freigabe des Admin-Ports:\n'
+printf '  1. Von deinem Arbeitsplatz einen SSH-Tunnel öffnen:\n'
+printf '     ssh -L 3001:127.0.0.1:3001 <admin-user>@<server-address>\n'
+printf '  2. Im Browser öffnen: http://127.0.0.1:3001/admin/\n'
+printf '  3. Unter Einrichtung nur die benötigten Ziele, Plugins und Freigaben konfigurieren.\n'
+printf '\nWichtig: Port 3001 nicht direkt ins LAN oder Internet freigeben.\n'

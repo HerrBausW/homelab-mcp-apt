@@ -4,38 +4,38 @@ Hash: SHA512
 Architectures: all
 Codename: stable
 Components: main
-Date: Thu, 10 Sep 2026 05:51:12 +0000
+Date: Thu, 10 Sep 2026 06:09:57 +0000
 Description: Homelab MCP Debian packages
 Label: Homelab MCP
 Origin: Homelab MCP
 Suite: stable
 MD5Sum:
- d413e85967f314b528b441340ef15dd8              185 Release
- c7814cd701044db4c80de819df17964a              722 main/binary-all/Packages
- 69e060b00c6603c57a90806b6799d900              517 main/binary-all/Packages.gz
+ 16b95af6cb4344e44a8ce47deb671cc3              185 Release
+ 57be122efbfa1064e303ca7cdd561737             1444 main/binary-all/Packages
+ effae26556e1c144ffbf1dc7d8bc6031              638 main/binary-all/Packages.gz
 SHA1:
- a51e7fece26dd9747d1c2b57990d223549ec0f13              185 Release
- 6135c88c029c8e6579453881b8e2d644a0073a09              722 main/binary-all/Packages
- f1f406d24ba8cd950dfc52c3e6b77ef379b93d57              517 main/binary-all/Packages.gz
+ 40922d385435eadfab05056007447777ae8841d6              185 Release
+ 7585ce154a4ce43692ad9b72ef40d3d09811ef83             1444 main/binary-all/Packages
+ ce2bc84d230db81c40e56bcfd157b33de8c65a87              638 main/binary-all/Packages.gz
 SHA256:
- 4b8ada6ba6558365aac3b396257a31ceb52043c7421e4d50d5dbc78c565fac7f              185 Release
- b7a9f05a560358e8b2fc2f28a5fb1bb5a9f0a3dba1f7ee6ed4d0c7cbdeb13c02              722 main/binary-all/Packages
- 69d37987f3c87b99a391ad667bb6a0bb1bb44afd6e416806a3041c800d70ab2a              517 main/binary-all/Packages.gz
+ 66b92fdef1300f0786fd5b40943640ae81f132ca929b1a1d216ff16a8f9cea13              185 Release
+ 6a76c67b4d32d3f9e1ef9bd3d945cf6ca323c85f3c64716dcb27cabffd3f8290             1444 main/binary-all/Packages
+ 0992597c9bfed83d00d0a714baf4dec3aad3761110db1a6943b22e8213102d27              638 main/binary-all/Packages.gz
 SHA512:
- 4f8ac87eb8ab86355aee5902576525ec2c2dd97b1c30b603cb56e3a3d0ad06d920b3ee9cb0a7650c52ae69cdf890a1360bf50d745ff0046a2db6028e174079ef              185 Release
- 60da18771073ebf4d0a3d00f9d2f4d7fcd9144ac31a00acf60041975fcbe7fb7a5ac2cdf836d63c42cf7e3adc7d2f5abcd0e55d1d17d0b6b5a209ab67c583b7e              722 main/binary-all/Packages
- 753dcbb08c8db5b51f9f00f1f3e02261faab7c85664288c3fa557de05bf664bf02086ccb3a78e60cea776f2e74c48737ae51818a4501fdfa9a96e2adba4b549e              517 main/binary-all/Packages.gz
+ 0887e049625028f722162ecd02e3dcb090177f393a5930c7d5b2324977243d3ee00f0e532415a2352cd67562558f9c8729f0e93b22ae479ad60126eee678dd10              185 Release
+ b30ad79487efdf7c97596dadf45d686eb1132b1488d7f757931e2ba011b01065fc87ee0e0905072d05f1feb887577e22cbae3613a4d6fd81ba2d88ed197beb62             1444 main/binary-all/Packages
+ aacf3cf5649dcbbd3311387c488d94be23ec36696f1591d7416bb46b65b1cf83d07b499a871ec11e6d97bec8a826be61f1267c58d1cc6dc7153cf78423431873              638 main/binary-all/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEEUiRYiVrfyar0DNXcl/rhVihhlk4FAmqiRVAACgkQl/rhVihh
-lk6kYAv/ewGW99njL7JcYLpiOT7EXBh/rjrnRvOMDy6RKtAD/rSIHcpWDhcLlPz+
-kkdzeGWGFAluwzl4xqJ+iFrQgXTcD8pJ6u6hz1PFjjSbYhTxhue//3DguZn5qmQN
-5aRTJOmB3s/NovSQP/YD8Lc2HF+fdPlqSQQq8NMIN68cA96E0V0qwpPHnr5V0mXG
-l3V9yHEjPKK3Ax2DVDvWeg8RG3RcrcwuFBUzK3DU9C002dmOYWzH8I93Ep7D9ro3
-qLAWY5fqoQuRDgMd7Cd3bI8cslo8VEB9mfS43OjooGcKkhE8QXvWqAyTNL2KUckO
-g5M6CXx2pXx8q13s0QMZDQeP1R1+TcxTMm/UZCRSrLj9cNmLqBfZJb/TwcxGSavb
-mj4i3/zcGnnEMHX/V64q/1ACgrikB0ZY031WhR0QdIUjJLq/5ng9BHY0+fqeKult
-BlE9b5rbsZwRSJXokgSg6gYYX7nLmPU54K7EZtd6flowvHiCEI6VnNjmwkvhdHe+
-QJ/IJJXd
-=dC5f
+iQGzBAEBCgAdFiEEUiRYiVrfyar0DNXcl/rhVihhlk4FAmqiSbUACgkQl/rhVihh
+lk45sgv/dL0IkvDLoDbobb/LTDX0xgdXwIQ/MFIw2hJOQZQ3DUBS9CzQLaaFuhYp
+dl3VRjxg5nVCtknG1SYQfsxgwSKXJwTgkuMHzHGH7IPYfUJderCqFY/NMIWpzXLa
++RZxncUZeG/2O8zQc1W84XCZdXW9iZ5IjGeaXJDuuEGtKgCLfhqLc7HVVUTRAk1O
+nVXY9FmUQgMYFpicqnrgdoyF24GkIC1C+zD+Y4Yd6gUifO9n7QnEaYKUdRlRkXHQ
+rxz0nb6WvXaU6Jwap+UgGCz2hvxa7Xb4I5p3tEWGHSXYfA1/TqCO3f70zopppqLW
+lOQNqYrKZSx/R+yV8z9JgumkZOISDU6ne/ihv7UbYNoD/G66WHoOzUTbi6EiJWia
+dR0/bBAuD+d1KKXJo3aZeE08fWjG0DT7P30qpdwOA9xhIYxUr+PwdXrJhnqwqC0u
+54+yIYgfj2SqciY76WscpXOyusei5gTdQpZ9n6GyTUditw6LR5ixe52d14R++cdk
+pmgTBZJ2
+=cH9J
 -----END PGP SIGNATURE-----
