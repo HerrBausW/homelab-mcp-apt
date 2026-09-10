@@ -27,8 +27,13 @@ apt-get install -y homelab-mcp
 
 printf '\nHomelab MCP ist installiert.\n'
 printf 'Admin-Oberfläche lokal: http://127.0.0.1:3001/admin/\n'
+server_ip=$(hostname -I 2>/dev/null | awk '{ for (i = 1; i <= NF; i++) if ($i ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/) { print $i; exit } }')
 printf '\nErsteinrichtung im privaten Netzwerk:\n'
-printf '  Im Browser öffnen: http://<server-address>:3101/admin/\n'
+if [[ -n "$server_ip" ]]; then
+  printf '  Im Browser öffnen: http://%s:3101/admin/\n' "$server_ip"
+else
+  printf '  Im Browser öffnen: http://<server-address>:3101/admin/\n'
+fi
 printf '  Die Admin-Oberfläche ist dort zunächst ohne eigenes Passwort erreichbar.\n'
 printf '  Der auffällige Warnhinweis muss bewusst bestätigt werden.\n'
 printf '  Für externen Zugriff einen authentifizierten Reverse Proxy wie Cloudflare Access verwenden.\n'
