@@ -10,7 +10,7 @@ Als root auf Debian 13:
 curl -fsSL https://raw.githubusercontent.com/HerrBausW/homelab-mcp-apt/main/install.sh | bash
 ```
 
-Die Ersteinrichtung erfolgt über die loopback-only Admin-Oberfläche. Der Administrator öffnet sie über einen eigenen SSH-Tunnel; ein generischer Root-Zugang für ChatGPT oder Automation wird nicht eingerichtet.
+Die Ersteinrichtung erfolgt direkt über den Admin-Ingress im privaten Netzwerk unter . Dieser Zugang hat bewusst kein eigenes Passwort und zeigt einen deutlichen Warnhinweis. Der privilegierte Admin-Dienst auf Port 3001 bleibt loopback-only. Für externen Zugriff ist ein authentifizierter Reverse Proxy wie Cloudflare Access vorgesehen.
 
 Danach werden Homelab-MCP-Updates normal über Debian eingespielt:
 
