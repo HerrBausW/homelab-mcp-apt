@@ -1,6 +1,6 @@
 {
-  "version": "0.5.23",
-  "tag": "v0.5.23",
-  "notes": "- Die Tool-Ansicht zeigt neben SSH-Zielen auch die übrigen eingebauten Systeme als eigene Gruppen; Home Assistant bleibt bewusst ausgeblendet.\n- Der APT-Update-Button kann Homelab MCP jetzt direkt aus der Oberfläche über einen festen privilegierten systemd-Updater aktualisieren.\n- Der MCP-Laufzeitbenutzer erhält dafür keine Shell- oder sudo-Rechte.\n- Die generische Eingabe „Geschützte Werte“ wurde als erweiterter Bereich „Zugangsdaten“ zurückgestuft und erklärt ihren Zweck.",
-  "publishedAt": "2026-09-10T14:04:59Z"
+  "version": "0.5.24",
+  "tag": "v0.5.24",
+  "notes": "- Funktionsumfang des bisherigen MCP v1 wird in die neue Architektur zurückgeführt: lokale Shell mit Admin-Gate, Infrastruktur-/Ping-/Audit-Tools, Linux-SSH-Wartung und Dateiwerkzeuge sowie MikroTik RouterOS.\n- Proxmox erhält wieder Dienstestatus, Dienstneustart, Journal lesen und Journal bereinigen über den eingeschränkten mcp-pct-Wrapper.\n- Linux-SSH-Ziele unterstützen optionale Schreibpfad-Allowlisten; Schreibzugriffe bleiben ohne explizite Freigabe gesperrt.\n- MikroTik verwendet einen eigenen RouterOS-SSH-Ausführungspfad statt POSIX-Command-Quoting.\n- Bestehende Installationen mit bereits eingerichteten SSH-Zielen erhalten die neuen read-only Linux-Werkzeuge einmalig automatisch aktiviert; eine spätere bewusste Deaktivierung wird respektiert.\n- Die Shell lässt sich unter Sicherheit ein- und ausschalten und läuft ausschließlich als unprivilegierter homelab-mcp-Benutzer.",
+  "publishedAt": "2026-09-10T14:37:41Z"
 }
