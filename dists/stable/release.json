@@ -1,6 +1,6 @@
 {
-  "version": "0.5.19",
-  "tag": "v0.5.19",
-  "notes": "- Tools und Freigaben wurden in einer gemeinsamen Ansicht zusammengeführt.\n- Systeme zeigen ihre Vorlagen-Tools und können über „+ Tool“ direkt erweitert werden.\n- Portable Exporte lassen sich nach System auswählen.\n- Zusätzlich gibt es ein verschlüsseltes Vollbackup mit privaten SSH-/Wiki-Schlüsseln und geschützten Werten.\n- Audit-Protokoll ist jetzt Teil von Sicherheit; die technische Konfigurationsansicht wurde aus der Navigation entfernt.\n- Interne Home-Assistant- und System-Plugins werden in den normalen Freigaben ausgeblendet.",
-  "publishedAt": "2026-09-10T12:31:03Z"
+  "version": "0.5.20",
+  "tag": "v0.5.20",
+  "notes": "- Behebt einen JavaScript-Fehler nach dem Zusammenführen der Tool-Ansicht: ein entfernter Legacy-Container wird nicht mehr vorausgesetzt.",
+  "publishedAt": "2026-09-10T12:35:50Z"
 }
