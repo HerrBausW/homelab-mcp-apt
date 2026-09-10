@@ -1,6 +1,6 @@
 {
-  "version": "0.5.30",
-  "tag": "v0.5.30",
-  "notes": "- Behebt fehlgeschlagene Sicherheitsänderungen wie das Aktivieren der MCP-Shell: Die Audit-Kategorien `security` und `backup` werden jetzt vom Audit-System akzeptiert.\n- Die Admin-Oberfläche zeigt bei einem echten Audit-Ausfall eine verständliche Meldung statt des internen Codes `audit_unavailable`.",
-  "publishedAt": "2026-09-10T20:33:02Z"
+  "version": "0.5.31",
+  "tag": "v0.5.31",
+  "notes": "- Behebt das Aktivieren der MCP-Shell unter der gehärteten Admin-Unit: Das Shell-Gate-Verzeichnis ist jetzt root-owned und für den unprivilegierten MCP-Dienst nur lesbar/traversierbar.\n- Paket-Upgrades reparieren die Verzeichnisrechte automatisch, sodass bestehende Installationen keinen manuellen chmod/chown benötigen.",
+  "publishedAt": "2026-09-10T21:13:41Z"
 }
