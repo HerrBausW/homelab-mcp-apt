@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.6
+
+- Ein Klick auf die Versionsanzeige öffnet jetzt einen kompakten Versionsverlauf; bei verfügbarem Update werden dessen Änderungen hervorgehoben vor den zuletzt installierten Versionen angezeigt.
+
 ## 0.6.5
 
 - `/admin` leitet jetzt auf `/admin/` um, sodass die Admin-Oberfläche auch ohne abschließenden Slash funktioniert.

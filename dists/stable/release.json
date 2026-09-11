@@ -1,6 +1,6 @@
 {
-  "version": "0.6.5",
-  "tag": "v0.6.5",
-  "notes": "- `/admin` leitet jetzt auf `/admin/` um, sodass die Admin-Oberfläche auch ohne abschließenden Slash funktioniert.\n- Beim Aktivieren des abgesicherten Reverse-Proxy-Modus wird der MCP-Ingress auf Port 3100 mit Proxy-IP und öffentlichem Hostnamen automatisch konfiguriert und gestartet; beim Wechsel zurück ins private Netz wird er wieder deaktiviert.",
-  "publishedAt": "2026-09-11T11:51:47Z"
+  "version": "0.6.6",
+  "tag": "v0.6.6",
+  "notes": "- Ein Klick auf die Versionsanzeige öffnet jetzt einen kompakten Versionsverlauf; bei verfügbarem Update werden dessen Änderungen hervorgehoben vor den zuletzt installierten Versionen angezeigt.",
+  "publishedAt": "2026-09-11T12:13:31Z"
 }
