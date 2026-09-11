@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.5
+
+- `/admin` leitet jetzt auf `/admin/` um, sodass die Admin-Oberfläche auch ohne abschließenden Slash funktioniert.
+- Beim Aktivieren des abgesicherten Reverse-Proxy-Modus wird der MCP-Ingress auf Port 3100 mit Proxy-IP und öffentlichem Hostnamen automatisch konfiguriert und gestartet; beim Wechsel zurück ins private Netz wird er wieder deaktiviert.
 ## 0.6.4
 
 - Die Reverse-Proxy-Einrichtung kennzeichnet die Proxy-IP sichtbar als Pflichtfeld und meldet fehlende Proxy-IP-Adressen auf Deutsch.

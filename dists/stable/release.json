@@ -1,6 +1,6 @@
 {
-  "version": "0.6.4",
-  "tag": "v0.6.4",
-  "notes": "- Die Reverse-Proxy-Einrichtung kennzeichnet die Proxy-IP sichtbar als Pflichtfeld und meldet fehlende Proxy-IP-Adressen auf Deutsch.\n- Linux-/ebusd-Vorlagenwerkzeuge sind jetzt pro SSH-Ziel bearbeitbar; bestehende Linux-Ziele erhalten die editierbaren Standardbefehle beim Start automatisch nachgetragen.",
-  "publishedAt": "2026-09-11T10:48:27Z"
+  "version": "0.6.5",
+  "tag": "v0.6.5",
+  "notes": "- `/admin` leitet jetzt auf `/admin/` um, sodass die Admin-Oberfläche auch ohne abschließenden Slash funktioniert.\n- Beim Aktivieren des abgesicherten Reverse-Proxy-Modus wird der MCP-Ingress auf Port 3100 mit Proxy-IP und öffentlichem Hostnamen automatisch konfiguriert und gestartet; beim Wechsel zurück ins private Netz wird er wieder deaktiviert.",
+  "publishedAt": "2026-09-11T11:51:47Z"
 }
