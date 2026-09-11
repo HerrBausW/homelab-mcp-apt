@@ -1,6 +1,6 @@
 {
-  "version": "0.6.9",
-  "tag": "v0.6.9",
-  "notes": "- Korrigiert die UI-Regressionstests für die wiederhergestellte gruppierte Werkzeugansicht mit Suche, Filter und Freigabeschaltern.\n- Die vollständige Testsuite läuft mit dem neuen Werkzeuglayout wieder erfolgreich durch.",
-  "publishedAt": "2026-09-11T14:36:54Z"
+  "version": "0.6.10",
+  "tag": "v0.6.10",
+  "notes": "- Behebt einen APT-Upgradefehler, durch den der eingeschränkte MCP-Ingress nach einem Update deaktiviert bleiben konnte, obwohl in der Sicherheitskonfiguration weiterhin Proxy-Betrieb mit öffentlichem Host aktiviert war.\n- Der Paketinstaller stellt den MCP-Ingress jetzt anhand der persistierten Proxy-Konfiguration wieder her; dadurch bleibt der öffentliche MCP-Endpunkt für externe MCP-Clients erreichbar.",
+  "publishedAt": "2026-09-11T15:25:22Z"
 }

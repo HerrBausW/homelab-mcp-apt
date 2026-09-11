@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.10
+
+- Behebt einen APT-Upgradefehler, durch den der eingeschränkte MCP-Ingress nach einem Update deaktiviert bleiben konnte, obwohl in der Sicherheitskonfiguration weiterhin Proxy-Betrieb mit öffentlichem Host aktiviert war.
+- Der Paketinstaller stellt den MCP-Ingress jetzt anhand der persistierten Proxy-Konfiguration wieder her; dadurch bleibt der öffentliche MCP-Endpunkt für externe MCP-Clients erreichbar.
+
 ## 0.6.9
 
 - Korrigiert die UI-Regressionstests für die wiederhergestellte gruppierte Werkzeugansicht mit Suche, Filter und Freigabeschaltern.
