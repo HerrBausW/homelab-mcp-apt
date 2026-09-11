@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.14
+
+- Behebt wiederholte SSH-/MikroTik-Key-Erzeugung: bereits an `homelab-mcp` übergebene private Schlüssel werden vor `chmod 0600` kurz vom Admin-Dienst als root übernommen und danach wieder an den Laufzeitbenutzer zurückgegeben. Dadurch funktionieren erneutes Erzeugen und späteres Speichern desselben SSH-Ziels ohne `EPERM`.
+- Die gleiche idempotente Rechtebehandlung gilt auch für bereits vorhandene Wiki-Deploy-Keys.
+
 ## 0.6.13
 
 - Behebt die SSH-Schlüsselerzeugung aus 0.6.12: Der gehärtete Admin-Dienst erhält ausschließlich `CAP_CHOWN`, damit private Ziel- und Wiki-Schlüssel sicher mit Modus 0600 an den Laufzeitbenutzer `homelab-mcp` übergeben werden können.
