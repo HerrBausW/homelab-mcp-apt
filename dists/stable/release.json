@@ -1,6 +1,6 @@
 {
-  "version": "0.6.0",
-  "tag": "v0.6.0",
-  "notes": "- Führt einen ausdrücklich vom menschlichen Administrator aktivierbaren Tool-Entwicklungsmodus ein.\n- Im Entwicklungsmodus kann ein MCP-Client vorhandene SSH-Ziele auflisten, Testbefehle mit den bereits konfigurierten eingeschränkten SSH-Benutzern ausführen, Tooldefinitionen validieren, speichern, löschen und den Tool-Katalog neu laden.\n- Der Entwicklungsmodus kann keine neuen Hosts anlegen und gewährt keinen Root-Login; alle Entwicklungsaufrufe laufen weiterhin durch das Audit-System.\n- Die Admin-Oberfläche zeigt den Modus unter Sicherheit deutlich an und aktiviert/deaktiviert die zugehörigen `dev_*`-Tools als eigene Plugin-Oberfläche.",
-  "publishedAt": "2026-09-11T07:25:10Z"
+  "version": "0.6.1",
+  "tag": "v0.6.1",
+  "notes": "- Die Laufzeitsicherheitsanzeige verwendet jetzt die tatsächlichen Zustände der MCP-Shell und der Tool-Entwicklung statt des statischen internen Felds `genericShellExposed`.\n- Nach Aktivieren oder Deaktivieren werden beide Zustände sofort korrekt in der Übersicht und unter Sicherheit angezeigt.",
+  "publishedAt": "2026-09-11T07:30:17Z"
 }
