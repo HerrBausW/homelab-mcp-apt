@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.17
+
+- APT-Self-Updates warten vor dem eigentlichen Paketlauf 3 Sekunden, damit die auslösende Admin-API-Anfrage sicher mit `202 Accepted` zurückkehren und der Browser den Fortschrittsmonitor starten kann, bevor APT den Admin-Ingress neu startet.
+- Der automatische Browser-Reload erfolgt nicht mehr unmittelbar nach `systemd`-Erfolg, sondern erst wenn die Admin-API tatsächlich eine neue installierte Version meldet.
+- Der Reload verwendet zusätzlich einen Cache-Buster, damit nach dem Update garantiert die neue Admin-Oberfläche geladen wird.
+
 ## 0.6.16
 
 - Der Admin-API-Client wiederholt reine Transportfehler wie `Failed to fetch` einmal automatisch. Das fängt abgerissene Browser-Keep-Alive-Verbindungen nach Admin-/MCP-Neustarts ab, ohne HTTP-Fehler blind erneut auszuführen.
