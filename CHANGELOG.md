@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.7
+
+- Die Admin-Oberfläche übernimmt wieder die ruhigere, hellere Gestaltung des bisherigen MCP-Dashboards mit kompakterer Navigation, großzügigerer Typografie und flacheren Karten, behält aber die neuen Reiter bei.
+- Die Versionsanzeige bleibt anklickbar und zeigt weiterhin die letzten Änderungen sowie bei verfügbarem Update dessen Versionshinweise hervorgehoben an.
+
 ## 0.6.6
 
 - Ein Klick auf die Versionsanzeige öffnet jetzt einen kompakten Versionsverlauf; bei verfügbarem Update werden dessen Änderungen hervorgehoben vor den zuletzt installierten Versionen angezeigt.

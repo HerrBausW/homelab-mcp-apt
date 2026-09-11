@@ -1,6 +1,6 @@
 {
-  "version": "0.6.6",
-  "tag": "v0.6.6",
-  "notes": "- Ein Klick auf die Versionsanzeige öffnet jetzt einen kompakten Versionsverlauf; bei verfügbarem Update werden dessen Änderungen hervorgehoben vor den zuletzt installierten Versionen angezeigt.",
-  "publishedAt": "2026-09-11T12:13:31Z"
+  "version": "0.6.7",
+  "tag": "v0.6.7",
+  "notes": "- Die Admin-Oberfläche übernimmt wieder die ruhigere, hellere Gestaltung des bisherigen MCP-Dashboards mit kompakterer Navigation, großzügigerer Typografie und flacheren Karten, behält aber die neuen Reiter bei.\n- Die Versionsanzeige bleibt anklickbar und zeigt weiterhin die letzten Änderungen sowie bei verfügbarem Update dessen Versionshinweise hervorgehoben an.",
+  "publishedAt": "2026-09-11T13:48:28Z"
 }
