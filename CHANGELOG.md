@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.4
+
+- Die Reverse-Proxy-Einrichtung kennzeichnet die Proxy-IP sichtbar als Pflichtfeld und meldet fehlende Proxy-IP-Adressen auf Deutsch.
+- Linux-/ebusd-Vorlagenwerkzeuge sind jetzt pro SSH-Ziel bearbeitbar; bestehende Linux-Ziele erhalten die editierbaren Standardbefehle beim Start automatisch nachgetragen.
 ## 0.6.3
 
 - Der Warnhinweis für ungeschützten Admin-Zugriff ist nicht mehr als vollbreiter roter Banner ausgeführt, sondern als kompakte Warnkarte im normalen Seitenlayout.
