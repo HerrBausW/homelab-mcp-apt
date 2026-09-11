@@ -1,6 +1,6 @@
 {
-  "version": "0.6.2",
-  "tag": "v0.6.2",
-  "notes": "- Entfernt die redundante Karte „Laufzeitsicherheit“ aus der Sicherheitsseite; Shell, Tool-Entwicklung und Admin-Zugriff stehen dort bereits in ihren eigenen Bereichen.\n- Das öffentliche APT-Repository veröffentlicht ab jetzt die kanonische `CHANGELOG.md` aus dem Quellrepository und verlinkt sie im README.\n- Ergänzt die bislang fehlenden Einträge für alle tatsächlich veröffentlichten frühen Releases 0.5.1 bis 0.5.13. Nicht veröffentlichte Versionsnummern werden nicht künstlich aufgeführt.",
-  "publishedAt": "2026-09-11T07:38:04Z"
+  "version": "0.6.3",
+  "tag": "v0.6.3",
+  "notes": "- Der Warnhinweis für ungeschützten Admin-Zugriff ist nicht mehr als vollbreiter roter Banner ausgeführt, sondern als kompakte Warnkarte im normalen Seitenlayout.\n- Der globale Hinweisbanner wurde optisch in die Karten-/Panel-Sprache der Admin-Oberfläche integriert und wirkt nicht mehr wie ein separater blauer Systembanner.\n- Nach erfolgreichem Speichern eines zusätzlichen SSH-Ziels wird die Eingabemaske geleert und die erweiterte Einrichtung wieder eingeklappt.\n- Die Kopierbuttons für SSH-/Proxmox-Bootstrap-Befehle verwenden jetzt einen Clipboard-Fallback für unverschlüsselte lokale Admin-Seiten und sind als kompakte Code-Kopierbuttons gestaltet.",
+  "publishedAt": "2026-09-11T08:05:43Z"
 }

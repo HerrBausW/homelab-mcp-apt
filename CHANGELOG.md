@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.3
+
+- Der Warnhinweis für ungeschützten Admin-Zugriff ist nicht mehr als vollbreiter roter Banner ausgeführt, sondern als kompakte Warnkarte im normalen Seitenlayout.
+- Der globale Hinweisbanner wurde optisch in die Karten-/Panel-Sprache der Admin-Oberfläche integriert und wirkt nicht mehr wie ein separater blauer Systembanner.
+- Nach erfolgreichem Speichern eines zusätzlichen SSH-Ziels wird die Eingabemaske geleert und die erweiterte Einrichtung wieder eingeklappt.
+- Die Kopierbuttons für SSH-/Proxmox-Bootstrap-Befehle verwenden jetzt einen Clipboard-Fallback für unverschlüsselte lokale Admin-Seiten und sind als kompakte Code-Kopierbuttons gestaltet.
+
 ## 0.6.2
 
 - Entfernt die redundante Karte „Laufzeitsicherheit“ aus der Sicherheitsseite; Shell, Tool-Entwicklung und Admin-Zugriff stehen dort bereits in ihren eigenen Bereichen.
