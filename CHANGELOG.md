@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.16
+
+- Der Admin-API-Client wiederholt reine Transportfehler wie `Failed to fetch` einmal automatisch. Das fängt abgerissene Browser-Keep-Alive-Verbindungen nach Admin-/MCP-Neustarts ab, ohne HTTP-Fehler blind erneut auszuführen.
+- Dadurch funktionieren Aktionen wie MikroTik-Hostschlüssel abrufen nach Updates robuster, ohne dass die Seite manuell neu geladen werden muss.
+
 ## 0.6.15
 
 - SSH-Systemwerkzeuge sind jetzt echte zielbezogene MCP-Tools statt eines globalen Tools mit `host`-Parameter. Dadurch haben z. B. `ebusd_heizung_read_file`, `ebusd_lueftung_read_file` und `cloudflared_read_file` unabhängige Freigaben und erscheinen in ChatGPT als getrennte Aktionen.
