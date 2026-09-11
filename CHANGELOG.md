@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.12
+
+- MikroTik-Ziele können jetzt frei benannt und mehrfach eingerichtet werden, z. B. `router`, `ap1`, `ap2` und `ap3`; der Systemtyp RouterOS wird unabhängig von der Ziel-ID gespeichert.
+- Die MikroTik-Tools unterstützen mehrere Ziele über ein optionales `target`-Argument und bieten mit `mikrotik_list_devices` eine Übersicht der eingerichteten RouterOS-Geräte.
+- Beim MikroTik-Setup kopiert die Schaltfläche jetzt den öffentlichen SSH-Schlüssel statt eines Hinweistexts.
+- Generische SSH-Privatschlüssel werden OpenSSH-konform mit Modus 0600 und als Eigentum des Laufzeitbenutzers gespeichert.
+- Eingerichtete eBUSd-Ziele werden in der Tool-Ansicht verständlich als `eBUSd Heizung` und `eBUSd Lüftung` bezeichnet.
+
 ## 0.6.11
 
 - Behebt den Wiki-Deploy-Key-Fehler `WARNING: UNPROTECTED PRIVATE KEY FILE!`: private Wiki-SSH-Schlüssel werden jetzt mit Modus 0600 und als Eigentum des Laufzeitbenutzers `homelab-mcp` gespeichert.
