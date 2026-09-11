@@ -1,6 +1,6 @@
 {
-  "version": "0.6.12",
-  "tag": "v0.6.12",
-  "notes": "- MikroTik-Ziele können jetzt frei benannt und mehrfach eingerichtet werden, z. B. `router`, `ap1`, `ap2` und `ap3`; der Systemtyp RouterOS wird unabhängig von der Ziel-ID gespeichert.\n- Die MikroTik-Tools unterstützen mehrere Ziele über ein optionales `target`-Argument und bieten mit `mikrotik_list_devices` eine Übersicht der eingerichteten RouterOS-Geräte.\n- Beim MikroTik-Setup kopiert die Schaltfläche jetzt den öffentlichen SSH-Schlüssel statt eines Hinweistexts.\n- Generische SSH-Privatschlüssel werden OpenSSH-konform mit Modus 0600 und als Eigentum des Laufzeitbenutzers gespeichert.\n- Eingerichtete eBUSd-Ziele werden in der Tool-Ansicht verständlich als `eBUSd Heizung` und `eBUSd Lüftung` bezeichnet.",
-  "publishedAt": "2026-09-11T22:16:32Z"
+  "version": "0.6.13",
+  "tag": "v0.6.13",
+  "notes": "- Behebt die SSH-Schlüsselerzeugung aus 0.6.12: Der gehärtete Admin-Dienst erhält ausschließlich `CAP_CHOWN`, damit private Ziel- und Wiki-Schlüssel sicher mit Modus 0600 an den Laufzeitbenutzer `homelab-mcp` übergeben werden können.\n- APT-Updates zeigen jetzt den vorhandenen Fortschrittsbalken sichtbar an, wechseln während des Dienst-Neustarts in einen laufenden Status und laden die Adminseite automatisch neu, sobald das Update abgeschlossen ist.",
+  "publishedAt": "2026-09-11T22:25:54Z"
 }

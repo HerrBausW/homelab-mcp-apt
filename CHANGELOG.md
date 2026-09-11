@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.13
+
+- Behebt die SSH-Schlüsselerzeugung aus 0.6.12: Der gehärtete Admin-Dienst erhält ausschließlich `CAP_CHOWN`, damit private Ziel- und Wiki-Schlüssel sicher mit Modus 0600 an den Laufzeitbenutzer `homelab-mcp` übergeben werden können.
+- APT-Updates zeigen jetzt den vorhandenen Fortschrittsbalken sichtbar an, wechseln während des Dienst-Neustarts in einen laufenden Status und laden die Adminseite automatisch neu, sobald das Update abgeschlossen ist.
+
 ## 0.6.12
 
 - MikroTik-Ziele können jetzt frei benannt und mehrfach eingerichtet werden, z. B. `router`, `ap1`, `ap2` und `ap3`; der Systemtyp RouterOS wird unabhängig von der Ziel-ID gespeichert.
