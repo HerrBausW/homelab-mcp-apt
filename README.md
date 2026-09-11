@@ -28,6 +28,10 @@ Der privilegierte Admin-Dienst auf Port `3001` und der MCP-Dienst auf Port `3000
 
 Der Bereich **Zugangsdaten** ist nur für Integrationen erforderlich, die ausdrücklich Tokens oder andere Geheimnisse benötigen. Für die normale Proxmox-SSH-Einrichtung ist dort nichts einzutragen.
 
+## Änderungen
+
+Der vollständige Versionsverlauf steht in [CHANGELOG.md](CHANGELOG.md).
+
 ## Updates
 
 Wenn eine neue Version verfügbar ist, kann sie in der Admin-Oberfläche mit **Jetzt aktualisieren** installiert werden. Alternativ als root:

@@ -1,6 +1,6 @@
 {
-  "version": "0.6.1",
-  "tag": "v0.6.1",
-  "notes": "- Die Laufzeitsicherheitsanzeige verwendet jetzt die tatsächlichen Zustände der MCP-Shell und der Tool-Entwicklung statt des statischen internen Felds `genericShellExposed`.\n- Nach Aktivieren oder Deaktivieren werden beide Zustände sofort korrekt in der Übersicht und unter Sicherheit angezeigt.",
-  "publishedAt": "2026-09-11T07:30:17Z"
+  "version": "0.6.2",
+  "tag": "v0.6.2",
+  "notes": "- Entfernt die redundante Karte „Laufzeitsicherheit“ aus der Sicherheitsseite; Shell, Tool-Entwicklung und Admin-Zugriff stehen dort bereits in ihren eigenen Bereichen.\n- Das öffentliche APT-Repository veröffentlicht ab jetzt die kanonische `CHANGELOG.md` aus dem Quellrepository und verlinkt sie im README.\n- Ergänzt die bislang fehlenden Einträge für alle tatsächlich veröffentlichten frühen Releases 0.5.1 bis 0.5.13. Nicht veröffentlichte Versionsnummern werden nicht künstlich aufgeführt.",
+  "publishedAt": "2026-09-11T07:38:04Z"
 }
