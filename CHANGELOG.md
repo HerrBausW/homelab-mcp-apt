@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.6.9
+
+- Korrigiert die UI-Regressionstests für die wiederhergestellte gruppierte Werkzeugansicht mit Suche, Filter und Freigabeschaltern.
+- Die vollständige Testsuite läuft mit dem neuen Werkzeuglayout wieder erfolgreich durch.
+
+## 0.6.8
+
+- Die Werkzeugverwaltung verwendet wieder den vertrauten Aufbau des bisherigen MCP-Dashboards: eine große Werkzeugkarte mit Suche, Freigabefilter, einklappbaren Systemgruppen, Risikobadges und Freigabeschaltern direkt in jeder Tool-Zeile.
+- Die neuen v2-Funktionen bleiben integriert: zusätzliche Tools, Vorlagen bearbeiten, Import/Export, portable Exporte und der Tool-Assistent sind weiterhin verfügbar.
+- Die Reiter-Navigation der neuen Admin-Oberfläche bleibt erhalten.
+
 ## 0.6.7
 
 - Die Admin-Oberfläche übernimmt wieder die ruhigere, hellere Gestaltung des bisherigen MCP-Dashboards mit kompakterer Navigation, großzügigerer Typografie und flacheren Karten, behält aber die neuen Reiter bei.
