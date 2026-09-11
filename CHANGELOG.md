@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.11
+
+- Behebt den Wiki-Deploy-Key-Fehler `WARNING: UNPROTECTED PRIVATE KEY FILE!`: private Wiki-SSH-Schlüssel werden jetzt mit Modus 0600 und als Eigentum des Laufzeitbenutzers `homelab-mcp` gespeichert.
+- Bereits vorhandene Wiki-Deploy-Keys werden beim APT-Update automatisch auf die sicheren OpenSSH-kompatiblen Besitz- und Dateirechte korrigiert.
+
 ## 0.6.10
 
 - Behebt einen APT-Upgradefehler, durch den der eingeschränkte MCP-Ingress nach einem Update deaktiviert bleiben konnte, obwohl in der Sicherheitskonfiguration weiterhin Proxy-Betrieb mit öffentlichem Host aktiviert war.

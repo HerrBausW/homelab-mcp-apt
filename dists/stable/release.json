@@ -1,6 +1,6 @@
 {
-  "version": "0.6.10",
-  "tag": "v0.6.10",
-  "notes": "- Behebt einen APT-Upgradefehler, durch den der eingeschränkte MCP-Ingress nach einem Update deaktiviert bleiben konnte, obwohl in der Sicherheitskonfiguration weiterhin Proxy-Betrieb mit öffentlichem Host aktiviert war.\n- Der Paketinstaller stellt den MCP-Ingress jetzt anhand der persistierten Proxy-Konfiguration wieder her; dadurch bleibt der öffentliche MCP-Endpunkt für externe MCP-Clients erreichbar.",
-  "publishedAt": "2026-09-11T15:25:22Z"
+  "version": "0.6.11",
+  "tag": "v0.6.11",
+  "notes": "- Behebt den Wiki-Deploy-Key-Fehler `WARNING: UNPROTECTED PRIVATE KEY FILE!`: private Wiki-SSH-Schlüssel werden jetzt mit Modus 0600 und als Eigentum des Laufzeitbenutzers `homelab-mcp` gespeichert.\n- Bereits vorhandene Wiki-Deploy-Keys werden beim APT-Update automatisch auf die sicheren OpenSSH-kompatiblen Besitz- und Dateirechte korrigiert.",
+  "publishedAt": "2026-09-11T21:49:48Z"
 }
