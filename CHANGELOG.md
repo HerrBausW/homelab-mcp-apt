@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.19
+
+- Eingerichtete Wiki-Integrationen erscheinen jetzt unter Tools mit ihren `wiki_*`-Freigaben; nicht eingerichtete Wiki-Integrationen bleiben dort weiterhin verborgen.
+- Nach APT-Updates, Rollbacks und Release-Aktivierungen lädt die Admin-Oberfläche immer die kanonische Route `/admin/` neu, statt die aktuell geladene Dokument-/Script-URL weiterzuverwenden. Dadurch landet Safari nach Updates nicht mehr auf einer internen `Document.js`-Adresse.
+
 ## 0.6.18
 
 - Wiki-Worktrees erkennen und reparieren jetzt automatisch einen abgebrochenen Erst-Clone, bei dem nur ein leeres `.git` zurückgeblieben ist; beim nächsten Zugriff werden `fetch` und `checkout` erneut ausgeführt.

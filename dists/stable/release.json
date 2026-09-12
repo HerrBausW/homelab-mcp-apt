@@ -1,6 +1,6 @@
 {
-  "version": "0.6.18",
-  "tag": "v0.6.18",
-  "notes": "- Wiki-Worktrees erkennen und reparieren jetzt automatisch einen abgebrochenen Erst-Clone, bei dem nur ein leeres `.git` zurückgeblieben ist; beim nächsten Zugriff werden `fetch` und `checkout` erneut ausgeführt.\n- Der Wiki-Einrichtungsprobe verwendet den privaten Deploy-Key kurzzeitig mit root-Eigentum und Modus 0600 und gibt ihn danach zuverlässig wieder an `homelab-mcp` zurück. Dadurch schlägt der gehärtete Admin-Dienst nicht mehr selbst an den korrekten Laufzeitrechten des Keys fehl.",
-  "publishedAt": "2026-09-12T06:57:02Z"
+  "version": "0.6.19",
+  "tag": "v0.6.19",
+  "notes": "- Eingerichtete Wiki-Integrationen erscheinen jetzt unter Tools mit ihren `wiki_*`-Freigaben; nicht eingerichtete Wiki-Integrationen bleiben dort weiterhin verborgen.\n- Nach APT-Updates, Rollbacks und Release-Aktivierungen lädt die Admin-Oberfläche immer die kanonische Route `/admin/` neu, statt die aktuell geladene Dokument-/Script-URL weiterzuverwenden. Dadurch landet Safari nach Updates nicht mehr auf einer internen `Document.js`-Adresse.",
+  "publishedAt": "2026-09-12T13:32:26Z"
 }
