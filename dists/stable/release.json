@@ -1,6 +1,6 @@
 {
-  "version": "0.6.19",
-  "tag": "v0.6.19",
-  "notes": "- Eingerichtete Wiki-Integrationen erscheinen jetzt unter Tools mit ihren `wiki_*`-Freigaben; nicht eingerichtete Wiki-Integrationen bleiben dort weiterhin verborgen.\n- Nach APT-Updates, Rollbacks und Release-Aktivierungen lädt die Admin-Oberfläche immer die kanonische Route `/admin/` neu, statt die aktuell geladene Dokument-/Script-URL weiterzuverwenden. Dadurch landet Safari nach Updates nicht mehr auf einer internen `Document.js`-Adresse.",
-  "publishedAt": "2026-09-12T13:32:26Z"
+  "version": "0.6.20",
+  "tag": "v0.6.20",
+  "notes": "- Entfernt den `_reload`-Query-Parameter aus dem Admin-Reload nach Updates, Rollbacks und Release-Aktivierungen. Der Admin-HTTP-Server lehnt Query-Parameter absichtlich ab; dadurch landete Safari nach einem Update auf einer JSON-Fehlerantwort (`query_parameters_not_supported`) und bot sie als `document.json` zum Speichern an.\n- Die Admin-Oberfläche lädt nach einem Update jetzt direkt die kanonische Route `/admin/`; `Cache-Control: no-store` ist bereits für alle Admin-UI-Antworten gesetzt, daher ist kein Query-Cache-Buster notwendig.",
+  "publishedAt": "2026-09-12T18:14:02Z"
 }

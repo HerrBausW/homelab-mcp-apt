@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.20
+
+- Entfernt den `_reload`-Query-Parameter aus dem Admin-Reload nach Updates, Rollbacks und Release-Aktivierungen. Der Admin-HTTP-Server lehnt Query-Parameter absichtlich ab; dadurch landete Safari nach einem Update auf einer JSON-Fehlerantwort (`query_parameters_not_supported`) und bot sie als `document.json` zum Speichern an.
+- Die Admin-Oberfläche lädt nach einem Update jetzt direkt die kanonische Route `/admin/`; `Cache-Control: no-store` ist bereits für alle Admin-UI-Antworten gesetzt, daher ist kein Query-Cache-Buster notwendig.
+
 ## 0.6.19
 
 - Eingerichtete Wiki-Integrationen erscheinen jetzt unter Tools mit ihren `wiki_*`-Freigaben; nicht eingerichtete Wiki-Integrationen bleiben dort weiterhin verborgen.
