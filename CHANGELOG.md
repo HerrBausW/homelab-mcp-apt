@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.18
+
+- Wiki-Worktrees erkennen und reparieren jetzt automatisch einen abgebrochenen Erst-Clone, bei dem nur ein leeres `.git` zurückgeblieben ist; beim nächsten Zugriff werden `fetch` und `checkout` erneut ausgeführt.
+- Der Wiki-Einrichtungsprobe verwendet den privaten Deploy-Key kurzzeitig mit root-Eigentum und Modus 0600 und gibt ihn danach zuverlässig wieder an `homelab-mcp` zurück. Dadurch schlägt der gehärtete Admin-Dienst nicht mehr selbst an den korrekten Laufzeitrechten des Keys fehl.
+
 ## 0.6.17
 
 - APT-Self-Updates warten vor dem eigentlichen Paketlauf 3 Sekunden, damit die auslösende Admin-API-Anfrage sicher mit `202 Accepted` zurückkehren und der Browser den Fortschrittsmonitor starten kann, bevor APT den Admin-Ingress neu startet.
