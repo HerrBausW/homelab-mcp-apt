@@ -1,6 +1,6 @@
 {
-  "version": "0.6.20",
-  "tag": "v0.6.20",
-  "notes": "- Entfernt den `_reload`-Query-Parameter aus dem Admin-Reload nach Updates, Rollbacks und Release-Aktivierungen. Der Admin-HTTP-Server lehnt Query-Parameter absichtlich ab; dadurch landete Safari nach einem Update auf einer JSON-Fehlerantwort (`query_parameters_not_supported`) und bot sie als `document.json` zum Speichern an.\n- Die Admin-Oberfläche lädt nach einem Update jetzt direkt die kanonische Route `/admin/`; `Cache-Control: no-store` ist bereits für alle Admin-UI-Antworten gesetzt, daher ist kein Query-Cache-Buster notwendig.",
-  "publishedAt": "2026-09-12T18:14:02Z"
+  "version": "0.6.21",
+  "tag": "v0.6.21",
+  "notes": "- Die Admin-Auditansicht fasst zusammengehörige `attempt`/`success`- bzw. `attempt`/`error`-Paare zu einem sichtbaren Endergebnis zusammen. Dadurch erscheint jede erfolgreich abgeschlossene Aktion in der Oberfläche nur noch einmal.\n- Verwaiste `attempt`-Einträge bleiben sichtbar, damit abgebrochene oder unvollständig protokollierte Aktionen weiterhin auffallen. Das persistente Roh-Audit bleibt vollständig unverändert.",
+  "publishedAt": "2026-09-14T11:06:50Z"
 }

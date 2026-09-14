@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.21
+
+- Die Admin-Auditansicht fasst zusammengehörige `attempt`/`success`- bzw. `attempt`/`error`-Paare zu einem sichtbaren Endergebnis zusammen. Dadurch erscheint jede erfolgreich abgeschlossene Aktion in der Oberfläche nur noch einmal.
+- Verwaiste `attempt`-Einträge bleiben sichtbar, damit abgebrochene oder unvollständig protokollierte Aktionen weiterhin auffallen. Das persistente Roh-Audit bleibt vollständig unverändert.
+
 ## 0.6.20
 
 - Entfernt den `_reload`-Query-Parameter aus dem Admin-Reload nach Updates, Rollbacks und Release-Aktivierungen. Der Admin-HTTP-Server lehnt Query-Parameter absichtlich ab; dadurch landete Safari nach einem Update auf einer JSON-Fehlerantwort (`query_parameters_not_supported`) und bot sie als `document.json` zum Speichern an.
