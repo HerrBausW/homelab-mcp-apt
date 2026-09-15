@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.22
+
+- Home Assistant MCP kann jetzt direkt unter **Einrichtung** verbunden werden. Die interne MCP-Adresse wird vor dem Speichern mit einem echten `ha_search_tools`-Aufruf geprüft.
+- Die HA-MCP-Adresse einschließlich Secret-Pfad wird ausschließlich als root-geschütztes Secret gespeichert und dem unprivilegierten MCP-Dienst über systemd `LoadCredential` bereitgestellt; Status, Audit und Admin-API geben den Wert nicht zurück.
+- Nach erfolgreicher Einrichtung werden `ha_search_tools`, `ha_call_read_tool`, `ha_call_write_tool`, `ha_call_delete_tool` und `ha_get_skill_guide` automatisch aktiviert und unter **Tools → Home Assistant** angezeigt.
+- Die optionale HA-MCP-Upstream-Konfiguration bleibt über APT-Updates erhalten; Bootstrap- und Debian-Installationen legen dafür das persistente systemd-Drop-in-Verzeichnis an.
+
 ## 0.6.21
 
 - Die Admin-Auditansicht fasst zusammengehörige `attempt`/`success`- bzw. `attempt`/`error`-Paare zu einem sichtbaren Endergebnis zusammen. Dadurch erscheint jede erfolgreich abgeschlossene Aktion in der Oberfläche nur noch einmal.
