@@ -1,6 +1,6 @@
 {
-  "version": "0.6.22",
-  "tag": "v0.6.22",
-  "notes": "- Home Assistant MCP kann jetzt direkt unter **Einrichtung** verbunden werden. Die interne MCP-Adresse wird vor dem Speichern mit einem echten `ha_search_tools`-Aufruf geprüft.\n- Die HA-MCP-Adresse einschließlich Secret-Pfad wird ausschließlich als root-geschütztes Secret gespeichert und dem unprivilegierten MCP-Dienst über systemd `LoadCredential` bereitgestellt; Status, Audit und Admin-API geben den Wert nicht zurück.\n- Nach erfolgreicher Einrichtung werden `ha_search_tools`, `ha_call_read_tool`, `ha_call_write_tool`, `ha_call_delete_tool` und `ha_get_skill_guide` automatisch aktiviert und unter **Tools → Home Assistant** angezeigt.\n- Die optionale HA-MCP-Upstream-Konfiguration bleibt über APT-Updates erhalten; Bootstrap- und Debian-Installationen legen dafür das persistente systemd-Drop-in-Verzeichnis an.",
-  "publishedAt": "2026-09-15T20:17:20Z"
+  "version": "0.6.23",
+  "tag": "v0.6.23",
+  "notes": "- Home Assistant MCP unterstützt jetzt zusätzlich **OAuth Client ID / OAuth Client Secret** als Authentifizierungsmodus neben dem privaten URL-Pfad.\n- Der OAuth-Modus verwendet den Remote-MCP-Endpunkt über HTTPS, startet einen OAuth-2.1-Authorization-Code-Flow mit PKCE und verarbeitet den Rückruf über den festen MCP2-Admin-Callback.\n- Client ID und Client Secret werden ausschließlich als root-geschützte systemd-Credentials gespeichert und weder in Status, Audit noch Admin-API zurückgegeben.\n- Access- und Refresh-Token werden in einem separaten Laufzeitbereich mit Modus 0600 gehalten; MCP2 erneuert abgelaufene Tokens automatisch und persistiert rotierte Refresh-Tokens.\n- Der OAuth-Callback ist die einzige Admin-Route, auf der Query-Parameter zulässig sind; alle übrigen Admin-Routen behalten die bestehende strikte Query-Sperre.\n- Die Einrichtung bietet nun explizit die Wahl zwischen **Privater URL-Pfad** und **OAuth Client ID / Secret**.",
+  "publishedAt": "2026-09-16T07:38:57Z"
 }

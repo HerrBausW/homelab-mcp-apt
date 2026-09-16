@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6.23
+
+- Home Assistant MCP unterstützt jetzt zusätzlich **OAuth Client ID / OAuth Client Secret** als Authentifizierungsmodus neben dem privaten URL-Pfad.
+- Der OAuth-Modus verwendet den Remote-MCP-Endpunkt über HTTPS, startet einen OAuth-2.1-Authorization-Code-Flow mit PKCE und verarbeitet den Rückruf über den festen MCP2-Admin-Callback.
+- Client ID und Client Secret werden ausschließlich als root-geschützte systemd-Credentials gespeichert und weder in Status, Audit noch Admin-API zurückgegeben.
+- Access- und Refresh-Token werden in einem separaten Laufzeitbereich mit Modus 0600 gehalten; MCP2 erneuert abgelaufene Tokens automatisch und persistiert rotierte Refresh-Tokens.
+- Der OAuth-Callback ist die einzige Admin-Route, auf der Query-Parameter zulässig sind; alle übrigen Admin-Routen behalten die bestehende strikte Query-Sperre.
+- Die Einrichtung bietet nun explizit die Wahl zwischen **Privater URL-Pfad** und **OAuth Client ID / Secret**.
+
 ## 0.6.22
 
 - Home Assistant MCP kann jetzt direkt unter **Einrichtung** verbunden werden. Die interne MCP-Adresse wird vor dem Speichern mit einem echten `ha_search_tools`-Aufruf geprüft.
