@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.26
+
+- **Container-Neustart repariert:** Der Proxmox-Wrapper `mcp-pct` reichte `restart` an `pct` weiter, `pct` kennt aber nur `reboot`. `proxmox_restart_container` schlug dadurch immer fehl. Der Bootstrap-Befehl in der Admin-Oberfläche setzt `restart` jetzt auf `pct reboot` um. **Der Wrapper auf dem Proxmox-Host muss einmalig neu installiert werden** (Einrichtung → Proxmox → Befehl erneut ausführen).
+- **Längere Timeouts für lange Operationen:** Built-in-Tools können bei der SSH-Capability einen begrenzten Timeout anfordern (1 s bis 300 s, Standard bleibt 10 s). `*_install_updates` nutzen 300 s, `*_clean_system` 120 s, Container Start/Stop/Neustart 120 s, `proxmox_restart_service` 60 s. Bisher konnte der 10-s-Timeout `apt upgrade` mitten im Lauf abbrechen.
+- **Einrichtung neutral gestaltet:** Home Assistant, Proxmox, SSH-Systeme und Wiki erscheinen als identische, einklappbare Karten in alphabetischer Reihenfolge. Die Übersichtskacheln, die Hervorhebung „Empfohlen“/„Optional“ und der Block „Danach“ entfallen.
+
 ## 0.6.25
 
 - Der Update-Fortschrittsbalken der Admin-Oberfläche ist jetzt ein oben fixiertes Banner und bleibt auf jeder Seite sichtbar, solange ein Update läuft.

@@ -1,6 +1,6 @@
 {
-  "version": "0.6.25",
-  "tag": "v0.6.25",
-  "notes": "- Der Update-Fortschrittsbalken der Admin-Oberfläche ist jetzt ein oben fixiertes Banner und bleibt auf jeder Seite sichtbar, solange ein Update läuft.\n- Nach einem APT-Update erkennt die Oberfläche den Neustart zuverlässiger: Sie lädt neu, sobald die neue Version gemeldet wird oder das Portal nach einem Neustart wieder dauerhaft antwortet.\n- Läuft die Erkennung in ein Zeitlimit, bleibt der Balken nicht mehr dauerhaft im Zustand „läuft“. Er zeigt einen eindeutigen Endzustand mit Hinweis zum Neuladen und einen Schließen-Button.\n- Wird die Seite während eines laufenden APT-Updates neu geladen, setzt die Oberfläche die Überwachung automatisch fort.",
-  "publishedAt": "2026-10-05T12:39:13Z"
+  "version": "0.6.26",
+  "tag": "v0.6.26",
+  "notes": "- **Container-Neustart repariert:** Der Proxmox-Wrapper `mcp-pct` reichte `restart` an `pct` weiter, `pct` kennt aber nur `reboot`. `proxmox_restart_container` schlug dadurch immer fehl. Der Bootstrap-Befehl in der Admin-Oberfläche setzt `restart` jetzt auf `pct reboot` um. **Der Wrapper auf dem Proxmox-Host muss einmalig neu installiert werden** (Einrichtung → Proxmox → Befehl erneut ausführen).\n- **Längere Timeouts für lange Operationen:** Built-in-Tools können bei der SSH-Capability einen begrenzten Timeout anfordern (1 s bis 300 s, Standard bleibt 10 s). `*_install_updates` nutzen 300 s, `*_clean_system` 120 s, Container Start/Stop/Neustart 120 s, `proxmox_restart_service` 60 s. Bisher konnte der 10-s-Timeout `apt upgrade` mitten im Lauf abbrechen.\n- **Einrichtung neutral gestaltet:** Home Assistant, Proxmox, SSH-Systeme und Wiki erscheinen als identische, einklappbare Karten in alphabetischer Reihenfolge. Die Übersichtskacheln, die Hervorhebung „Empfohlen“/„Optional“ und der Block „Danach“ entfallen.",
+  "publishedAt": "2026-10-05T12:53:03Z"
 }
