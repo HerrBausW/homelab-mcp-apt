@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.28
+
+- **Einrichtung überschreibt keine Freigaben mehr:** „Prüfen & verbinden“ bei Proxmox, das Speichern eines SSH-Ziels (Linux oder MikroTik), die Wiki- und die Home-Assistant-Einrichtung setzten die Policy des jeweiligen Plugins jedes Mal auf den Ausgangszustand zurück (z. B. Proxmox nur lesen) und löschten dabei alle Einzel-Freigaben wie `proxmox_restart_container`, `mikrotik_execute` oder `wiki_delete`. Die Ausgangswerte werden jetzt nur noch beim ersten Einrichten gesetzt; eine vorhandene Policy bleibt unverändert.
+
 ## 0.6.27
 
 - **Update-Anzeige repariert:** Ein laufendes APT-Update wurde von der Admin-Oberfläche sofort als „fertig“ gemeldet. Der Selbst-Update-Dienst ist ein `Type=oneshot`-Dienst und meldet während des Laufs `ActiveState=activating`; nur `active` zählte als laufend, und `Result` steht ohne vorherigen Fehler standardmäßig auf `success`. Dadurch wartete die Oberfläche nur noch begrenzt auf die neue Version und lud nicht automatisch neu. `activating`, `reloading` und `deactivating` gelten jetzt als laufend.
