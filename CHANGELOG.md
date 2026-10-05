@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.29
+
+- **Update-Wartephase begrenzt:** Nach Abschluss des APT-Updates lädt die Admin-Oberfläche beim ersten Lebenszeichen des neu gestarteten Portals neu, ohne die Version zu vergleichen. Jede Statusabfrage hat ein Zeitlimit (5 s), die Abfrage läuft im Sekundentakt, und nach höchstens einer Minute ohne Antwort wird trotzdem neu geladen.
+- **Watchdog:** Unabhängig von der Abfragelogik lädt sich die Seite 100 Sekunden nach dem Start eines Updates selbst neu. Läuft das Update dann noch, setzt die Oberfläche die Überwachung automatisch fort.
+- Ist das Portal während eines Neustarts nicht erreichbar, erscheint statt des rohen Browser-Texts „Failed to fetch“ ein deutscher Hinweis.
+
 ## 0.6.28
 
 - **Einrichtung überschreibt keine Freigaben mehr:** „Prüfen & verbinden“ bei Proxmox, das Speichern eines SSH-Ziels (Linux oder MikroTik), die Wiki- und die Home-Assistant-Einrichtung setzten die Policy des jeweiligen Plugins jedes Mal auf den Ausgangszustand zurück (z. B. Proxmox nur lesen) und löschten dabei alle Einzel-Freigaben wie `proxmox_restart_container`, `mikrotik_execute` oder `wiki_delete`. Die Ausgangswerte werden jetzt nur noch beim ersten Einrichten gesetzt; eine vorhandene Policy bleibt unverändert.
