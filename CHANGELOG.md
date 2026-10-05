@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.25
+
+- Der Update-Fortschrittsbalken der Admin-Oberfläche ist jetzt ein oben fixiertes Banner und bleibt auf jeder Seite sichtbar, solange ein Update läuft.
+- Nach einem APT-Update erkennt die Oberfläche den Neustart zuverlässiger: Sie lädt neu, sobald die neue Version gemeldet wird oder das Portal nach einem Neustart wieder dauerhaft antwortet.
+- Läuft die Erkennung in ein Zeitlimit, bleibt der Balken nicht mehr dauerhaft im Zustand „läuft“. Er zeigt einen eindeutigen Endzustand mit Hinweis zum Neuladen und einen Schließen-Button.
+- Wird die Seite während eines laufenden APT-Updates neu geladen, setzt die Oberfläche die Überwachung automatisch fort.
+
 ## 0.6.24
 
 - `ha_get_skill_guide` leitet nur noch den vom Home-Assistant-MCP unterstützten Parameter `file` weiter. Zuvor wurden `skill` und `null`-Werte an den Upstream gesendet und mit `VALIDATION_FAILED` abgelehnt; das Tool war dadurch faktisch unbenutzbar.
