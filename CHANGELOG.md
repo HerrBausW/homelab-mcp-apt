@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.31
+
+- **Update gegen veraltete Paketquelle abgesichert:** `release.json` und der APT-Index werden von GitHubs CDN mit eigenen Cache-Zeiten (bis zu fünf Minuten) ausgeliefert. Dadurch konnte die Oberfläche ein neues Update anbieten, während der APT-Index noch die alte Version führte; der Update-Dienst lief erfolgreich durch, installierte aber nichts, und die Oberfläche wartete vergeblich auf die neue Version. Der Update-Dienst liest jetzt die angekündigte Version und wiederholt `apt-get update` alle 15 Sekunden (höchstens 30 Mal), bis der Index sie anbietet. Danach wird installiert; andernfalls endet der Dienst mit einem Fehler.
+- Die Oberfläche überwacht ein Update bis zu zehn Minuten und erklärt nach 40 Sekunden, dass sie auf die Paketquelle wartet. Der Reload-Watchdog startet erst, wenn der Update-Dienst fertig ist.
+
 ## 0.6.30
 
 - **Ursache der hängenden Update-Anzeige behoben:** Die Admin-Oberfläche steht immer auf `/admin/#<ansicht>`. `location.replace()` auf dieselbe URL ist nur eine Navigation zum Fragment und lädt die Seite nicht neu. Deshalb blieb der Banner nach jedem Update auf „Dienste werden neu gestartet“ stehen, obwohl das Update längst installiert war (seit 0.6.20, als der Cache-Buster-Parameter entfernt wurde). Die Oberfläche lädt jetzt per `location.reload()` neu. Betroffen waren auch das Neuladen nach Aktivierung und Rollback.
