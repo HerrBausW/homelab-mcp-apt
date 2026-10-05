@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.24
+
+- `ha_get_skill_guide` leitet nur noch den vom Home-Assistant-MCP unterstützten Parameter `file` weiter. Zuvor wurden `skill` und `null`-Werte an den Upstream gesendet und mit `VALIDATION_FAILED` abgelehnt; das Tool war dadurch faktisch unbenutzbar.
+- `check_reachability` funktioniert jetzt auch im unprivilegierten Dienst ohne `CAP_NET_RAW`: Schlägt der ICMP-Ping fehl oder ist er nicht verfügbar, prüft das Tool ersatzweise per TCP-Verbindung (Ports 22, 80, 443, 53; `open` oder `refused` gilt als erreichbar) und weist das Verfahren in der Ausgabe aus.
+- `system_status` enthält jetzt Diagnosedaten zum Tool-Katalog (`tools.toolCount`, `tools.catalogRevision`, `tools.unavailablePlugins`). Damit lässt sich ohne Shell prüfen, was der Server wirklich ausliefert, und mit der Anzeige eines Clients vergleichen, dessen Toolliste veraltet sein kann.
+
 ## 0.6.23
 
 - Home Assistant MCP unterstützt jetzt zusätzlich **OAuth Client ID / OAuth Client Secret** als Authentifizierungsmodus neben dem privaten URL-Pfad.

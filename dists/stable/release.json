@@ -1,6 +1,6 @@
 {
-  "version": "0.6.23",
-  "tag": "v0.6.23",
-  "notes": "- Home Assistant MCP unterstützt jetzt zusätzlich **OAuth Client ID / OAuth Client Secret** als Authentifizierungsmodus neben dem privaten URL-Pfad.\n- Der OAuth-Modus verwendet den Remote-MCP-Endpunkt über HTTPS, startet einen OAuth-2.1-Authorization-Code-Flow mit PKCE und verarbeitet den Rückruf über den festen MCP2-Admin-Callback.\n- Client ID und Client Secret werden ausschließlich als root-geschützte systemd-Credentials gespeichert und weder in Status, Audit noch Admin-API zurückgegeben.\n- Access- und Refresh-Token werden in einem separaten Laufzeitbereich mit Modus 0600 gehalten; MCP2 erneuert abgelaufene Tokens automatisch und persistiert rotierte Refresh-Tokens.\n- Der OAuth-Callback ist die einzige Admin-Route, auf der Query-Parameter zulässig sind; alle übrigen Admin-Routen behalten die bestehende strikte Query-Sperre.\n- Die Einrichtung bietet nun explizit die Wahl zwischen **Privater URL-Pfad** und **OAuth Client ID / Secret**.",
-  "publishedAt": "2026-09-16T07:38:57Z"
+  "version": "0.6.24",
+  "tag": "v0.6.24",
+  "notes": "- `ha_get_skill_guide` leitet nur noch den vom Home-Assistant-MCP unterstützten Parameter `file` weiter. Zuvor wurden `skill` und `null`-Werte an den Upstream gesendet und mit `VALIDATION_FAILED` abgelehnt; das Tool war dadurch faktisch unbenutzbar.\n- `check_reachability` funktioniert jetzt auch im unprivilegierten Dienst ohne `CAP_NET_RAW`: Schlägt der ICMP-Ping fehl oder ist er nicht verfügbar, prüft das Tool ersatzweise per TCP-Verbindung (Ports 22, 80, 443, 53; `open` oder `refused` gilt als erreichbar) und weist das Verfahren in der Ausgabe aus.\n- `system_status` enthält jetzt Diagnosedaten zum Tool-Katalog (`tools.toolCount`, `tools.catalogRevision`, `tools.unavailablePlugins`). Damit lässt sich ohne Shell prüfen, was der Server wirklich ausliefert, und mit der Anzeige eines Clients vergleichen, dessen Toolliste veraltet sein kann.",
+  "publishedAt": "2026-10-05T12:03:39Z"
 }
