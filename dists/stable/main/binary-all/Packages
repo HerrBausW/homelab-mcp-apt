@@ -815,6 +815,23 @@ Description: Security-first MCP server for self-hosted infrastructure
  Linux SSH and MikroTik integrations.
 
 Package: homelab-mcp
+Version: 0.6.30
+Architecture: all
+Maintainer: Homelab MCP <homelab-mcp@localhost.invalid>
+Depends: nodejs (>= 24), git, openssh-client, openssh-server, ca-certificates, systemd, passwd, iputils-ping
+Filename: pool/main/h/homelab-mcp/homelab-mcp_0.6.30_all.deb
+Size: 1690548
+MD5sum: 0aa34e15ea2629349391c10831cf9722
+SHA1: 3f55f8cffd6520ffb72b82ea22faa5a60b5ca54f
+SHA256: b6a99c9f59c571445709c2668c246ac5e53d9136c6b39937c07635dafa79efc8
+Section: net
+Priority: optional
+Description: Security-first MCP server for self-hosted infrastructure
+ Plugin-based Model Context Protocol server with a local administration UI,
+ default-deny tool policy, persistent audit, custom tools, Wiki, Proxmox,
+ Linux SSH and MikroTik integrations.
+
+Package: homelab-mcp
 Version: 0.6.4
 Architecture: all
 Maintainer: Homelab MCP <homelab-mcp@localhost.invalid>

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.30
+
+- **Ursache der hängenden Update-Anzeige behoben:** Die Admin-Oberfläche steht immer auf `/admin/#<ansicht>`. `location.replace()` auf dieselbe URL ist nur eine Navigation zum Fragment und lädt die Seite nicht neu. Deshalb blieb der Banner nach jedem Update auf „Dienste werden neu gestartet“ stehen, obwohl das Update längst installiert war (seit 0.6.20, als der Cache-Buster-Parameter entfernt wurde). Die Oberfläche lädt jetzt per `location.reload()` neu. Betroffen waren auch das Neuladen nach Aktivierung und Rollback.
+
 ## 0.6.29
 
 - **Update-Wartephase begrenzt:** Nach Abschluss des APT-Updates lädt die Admin-Oberfläche beim ersten Lebenszeichen des neu gestarteten Portals neu, ohne die Version zu vergleichen. Jede Statusabfrage hat ein Zeitlimit (5 s), die Abfrage läuft im Sekundentakt, und nach höchstens einer Minute ohne Antwort wird trotzdem neu geladen.

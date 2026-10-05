@@ -1,6 +1,6 @@
 {
-  "version": "0.6.29",
-  "tag": "v0.6.29",
-  "notes": "- **Update-Wartephase begrenzt:** Nach Abschluss des APT-Updates lädt die Admin-Oberfläche beim ersten Lebenszeichen des neu gestarteten Portals neu, ohne die Version zu vergleichen. Jede Statusabfrage hat ein Zeitlimit (5 s), die Abfrage läuft im Sekundentakt, und nach höchstens einer Minute ohne Antwort wird trotzdem neu geladen.\n- **Watchdog:** Unabhängig von der Abfragelogik lädt sich die Seite 100 Sekunden nach dem Start eines Updates selbst neu. Läuft das Update dann noch, setzt die Oberfläche die Überwachung automatisch fort.\n- Ist das Portal während eines Neustarts nicht erreichbar, erscheint statt des rohen Browser-Texts „Failed to fetch“ ein deutscher Hinweis.",
-  "publishedAt": "2026-10-05T13:14:51Z"
+  "version": "0.6.30",
+  "tag": "v0.6.30",
+  "notes": "- **Ursache der hängenden Update-Anzeige behoben:** Die Admin-Oberfläche steht immer auf `/admin/#<ansicht>`. `location.replace()` auf dieselbe URL ist nur eine Navigation zum Fragment und lädt die Seite nicht neu. Deshalb blieb der Banner nach jedem Update auf „Dienste werden neu gestartet“ stehen, obwohl das Update längst installiert war (seit 0.6.20, als der Cache-Buster-Parameter entfernt wurde). Die Oberfläche lädt jetzt per `location.reload()` neu. Betroffen waren auch das Neuladen nach Aktivierung und Rollback.",
+  "publishedAt": "2026-10-05T13:22:52Z"
 }
