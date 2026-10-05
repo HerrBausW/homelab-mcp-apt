@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.27
+
+- **Update-Anzeige repariert:** Ein laufendes APT-Update wurde von der Admin-Oberfläche sofort als „fertig“ gemeldet. Der Selbst-Update-Dienst ist ein `Type=oneshot`-Dienst und meldet während des Laufs `ActiveState=activating`; nur `active` zählte als laufend, und `Result` steht ohne vorherigen Fehler standardmäßig auf `success`. Dadurch wartete die Oberfläche nur noch begrenzt auf die neue Version und lud nicht automatisch neu. `activating`, `reloading` und `deactivating` gelten jetzt als laufend.
+- Die Oberfläche wartet nach dem Neustart bis zu vier Minuten auf die neue Admin-Version, bevor der Balken den Endzustand mit Neuladen-Hinweis zeigt.
+
 ## 0.6.26
 
 - **Container-Neustart repariert:** Der Proxmox-Wrapper `mcp-pct` reichte `restart` an `pct` weiter, `pct` kennt aber nur `reboot`. `proxmox_restart_container` schlug dadurch immer fehl. Der Bootstrap-Befehl in der Admin-Oberfläche setzt `restart` jetzt auf `pct reboot` um. **Der Wrapper auf dem Proxmox-Host muss einmalig neu installiert werden** (Einrichtung → Proxmox → Befehl erneut ausführen).
