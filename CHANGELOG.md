@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.1
+
+- **Einrichtung weiterer Wikis repariert:** Der Admin-Dienst durfte `/var/lib/homelab-mcp/wikis` weder ändern noch dort Ordner anlegen (das Verzeichnis gehört dem MCP-Dienst); „Schlüssel erzeugen“ scheiterte mit `EPERM`. Die lokale Kopie legt jetzt der MCP-Dienst bei der ersten Nutzung selbst an, die Verbindungsprüfung braucht keinen Klon. Beim Entfernen eines Wikis werden Deploy-Key und Hostschlüssel gelöscht; die lokale Kopie bleibt liegen.
+
 ## 0.7.0
 
 - **Mehrere Wikis:** Neben dem Smart-Home-Wiki lassen sich beliebig viele weitere Git-Wikis einbinden (z. B. ein Reise-Wiki). Jedes Wiki hat eine ID, einen eigenen Deploy-Key, eigene known_hosts und einen eigenen lokalen Klon. Das erste Wiki bleibt als `default` an seinen bisherigen Orten und wird genutzt, wenn ein Tool-Aufruf kein Wiki nennt.
