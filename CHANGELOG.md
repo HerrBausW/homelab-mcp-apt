@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.7.0
+
+- **Mehrere Wikis:** Neben dem Smart-Home-Wiki lassen sich beliebig viele weitere Git-Wikis einbinden (z. B. ein Reise-Wiki). Jedes Wiki hat eine ID, einen eigenen Deploy-Key, eigene known_hosts und einen eigenen lokalen Klon. Das erste Wiki bleibt als `default` an seinen bisherigen Orten und wird genutzt, wenn ein Tool-Aufruf kein Wiki nennt.
+- Alle Wiki-Tools (`wiki_list`, `wiki_read`, `wiki_write`, `wiki_delete`, `wiki_sync`) haben den optionalen Parameter `wiki`; das neue Lese-Tool `wiki_list_wikis` zeigt die eingerichteten Wikis. Unbekannte IDs werden abgelehnt.
+- **Admin-Oberfläche:** Unter Einrichtung → Wiki werden alle Wikis aufgelistet; Wikis lassen sich hinzufügen, bearbeiten und entfernen (Deploy-Key, Hostschlüssel, Dokumentordner, erlaubte Root-Dateien). Beim Bearbeiten bleiben gespeicherte Hostschlüssel erhalten, wenn das Feld leer bleibt.
+- Neue Admin-API-Routen `PUT/DELETE /api/setup/wikis/<id>` und `POST /api/setup/wikis/<id>/key`; die bisherigen Routen `/api/setup/wiki` gelten weiter für das Standard-Wiki. Alle Änderungen werden auditiert.
+- Der MCP-Dienst darf zusätzlich `/var/lib/homelab-mcp/wikis` beschreiben (neue tmpfiles- und Unit-Einträge). Eine einzelne bisherige `wiki.json` bleibt im flachen Format.
+- Pfadprüfung der Wiki-Konfiguration ist unabhängig von der Plattform (POSIX).
+
 ## 0.6.31
 
 - **Update gegen veraltete Paketquelle abgesichert:** `release.json` und der APT-Index werden von GitHubs CDN mit eigenen Cache-Zeiten (bis zu fünf Minuten) ausgeliefert. Dadurch konnte die Oberfläche ein neues Update anbieten, während der APT-Index noch die alte Version führte; der Update-Dienst lief erfolgreich durch, installierte aber nichts, und die Oberfläche wartete vergeblich auf die neue Version. Der Update-Dienst liest jetzt die angekündigte Version und wiederholt `apt-get update` alle 15 Sekunden (höchstens 30 Mal), bis der Index sie anbietet. Danach wird installiert; andernfalls endet der Dienst mit einem Fehler.
