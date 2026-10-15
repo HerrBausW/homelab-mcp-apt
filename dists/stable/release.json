@@ -1,6 +1,6 @@
 {
-  "version": "0.7.1",
-  "tag": "v0.7.1",
-  "notes": "- **Einrichtung weiterer Wikis repariert:** Der Admin-Dienst durfte `/var/lib/homelab-mcp/wikis` weder ändern noch dort Ordner anlegen (das Verzeichnis gehört dem MCP-Dienst); „Schlüssel erzeugen“ scheiterte mit `EPERM`. Die lokale Kopie legt jetzt der MCP-Dienst bei der ersten Nutzung selbst an, die Verbindungsprüfung braucht keinen Klon. Beim Entfernen eines Wikis werden Deploy-Key und Hostschlüssel gelöscht; die lokale Kopie bleibt liegen.",
-  "publishedAt": "2026-10-15T06:44:42Z"
+  "version": "0.8.0",
+  "tag": "v0.8.0",
+  "notes": "- **Backup wiederherstellen:** Unter Tools → Import / Export lässt sich ein verschlüsseltes Vollbackup jetzt auch einspielen. Ablauf: Datei und Passwort wählen, **Backup prüfen** (Vorschau: neu, ersetzt, unverändert, es wird nichts geschrieben), dann **Jetzt wiederherstellen**. Der MCP-Dienst wird danach neu gestartet.\n- Das Backup wird vollständig entschlüsselt und geprüft, bevor etwas geschrieben wird. Erlaubt sind nur die bekannten Pfade unter `/etc/homelab-mcp`; absolute Pfade, `..`, unbekannte Namen, doppelte Einträge, zu große Dateien und mehr als 300 Dateien werden abgelehnt. Eigentümer und Rechte setzt die Wiederherstellung selbst (private Schlüssel: Dienstbenutzer 0600, `secrets/`: nur root).\n- Vor dem Einspielen wird der aktuelle Zustand automatisch als verschlüsselter Sicherungsstand unter `/var/lib/homelab-mcp/backups` abgelegt (die letzten fünf bleiben). Dateien, die nicht im Backup stehen, bleiben unverändert.\n- **Das Vollbackup ist vollständiger:** Es enthält jetzt auch `upstreams.json` (Home-Assistant-Bridge), `security.json` und die Schlüssel zusätzlicher Wikis (`wikis/<id>/`). Nach einer Wiederherstellung wird die Systemd-Einstellung der Home-Assistant-Bridge neu angelegt.\n- Neue Admin-API-Routen `POST /api/backup/inspect` und `POST /api/backup/restore` (Bestätigung erforderlich, auditiert als `destructive`, größere Anfragen nur auf diesen zwei Routen).",
+  "publishedAt": "2026-10-15T08:00:05Z"
 }
